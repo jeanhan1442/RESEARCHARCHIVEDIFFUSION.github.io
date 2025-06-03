@@ -1,0 +1,81 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48ZmlsdGVyIGlkPSJncmFpbiI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuOCIgbnVtT2N0YXZlcz0iNSIgcmVzdWx0PSJ0dXJidWxlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjEiLz48ZmVDb21wb3NpdGUgaW49InNvdXJjZUdyYXBoaWMiIGluMj0idHVyYnVsZSIgcmVzdWx0PSJjb21wb3NpdGUiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjZ3JhaW4pIiBvcGFjaXR5PSIwLj03Ii8+PC9zdmc+");
+  background-repeat: repeat;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+
+
+body {
+   position: relative;
+  z-index: 2;
+  margin: 5px;
+  padding: 0px;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+#tileGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  display: block; /* inline-block은 줄 간격 생길 수 있음 */
+  filter: contrast(150%) brightness(150%);
+  width: 58px;
+  height: 58px;
+  margin: 0px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.4s ease;
+}
+@font-face {
+  font-family: 'LetterGothicStdMedium';
+  src: url('fonts/LetterGothicStd.otf') format('opentype');
+}
+.manifesto {
+  font-family: 'LetterGothicStd', monospace;
+  letter-spacing: -0.02em;  /* 또는 -0.05em ~ -0.1em까지도 가능 */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #dfdfdf;
+  text-align: center;
+  z-index: 999;
+  background: #000000; /* 살짝 반투명 효과 */
+  padding: 10px 20px;
+  box-shadow: 0 0 10px #bcbcbc0d;
+  
+}
+
+.manifesto a {
+  color: inherit;           /* 텍스트 색상과 같게 */
+  text-decoration: underline; 
+  text-underline-offset: 3px; /* 밑줄과 텍스트 간격 */
+  text-decoration-thickness: .5px;
+  transition: opacity 0.3s ease;
+}
+
+.manifesto a:hover {
+  opacity: 0.6;             /* 호버 시 살짝 투명도 변화 */
+}
+

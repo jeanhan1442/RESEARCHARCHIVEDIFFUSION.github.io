@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Textual Research Archive</title>
+  <link rel="stylesheet" href="radresearch.css" />
+</head>
+<body>
+
+<!-- ✅ 1. LOADER (맨 위에 있어야 로딩될 때 최우선 표시됨) -->
+<div id="loader" class="loader">
+  <div class="loader-grid"></div>
+
+</div>
+
+<!-- ✅ 2. 메인 콘텐츠 전체를 감싸는 wrapper -->
+<div id="main-content" style="display: none;">
+
+    <header>
+      <div class="logo-modules"></div>
+      <div>
+        <span onclick="toggleMemo()">LET'S RESEARCH WITH...</span>
+      </div>
+      <div>
+        <span onclick="toggleMemo()">MEMO</span>
+      </div>
+    </header>
+
+  <div class="menu-nav">
+
+<nav class="menu-nav">
+    <div class="menu-item" data-category="thesis">
+      THESIS
+      <img src="SVG/slash.svg" class="underline" />
+    </div>
+    <div class="menu-item" data-category="interview">
+      INTERVIEW
+      <img src="SVG/slash.svg" class="underline" />
+    </div>
+    <div class="menu-item" data-category="record">
+      RECORD
+      <img src="SVG/slash.svg" class="underline" />
+    </div>
+    <div class="menu-item" data-category="essay">
+      ESSAY
+      <img src="SVG/slash.svg" class="underline" />
+    </div>
+    <div class="menu-item" data-category="etc">
+      ETC
+      <img src="SVG/slash.svg" class="underline" />
+    </div>
+  </nav>
+
+  <div id="memoBox" class="memo-box">
+  <textarea placeholder="Memo Something.
+  &#10;Excerpt / Quotation,&#10;Observational Notes,&#10;Analytical Structuring,&#10;Subjective Interpretation.&#10;Flexible arrangement and selective application
+are encouraged."></textarea>
+  </div>
+</div>
+
+  <div id="thesis" class="content">
+    <div class="card">
+      <strong>CREATING WITH MACHINES</strong><br><br>
+      Youngjin Oh examines the mechanisms by which large language model AIs—such as Notion AI, Wordcraft, 
+and ChatGPT—operate and make suggestions to users during the writing process. Stepping away from the current hype surrounding the popularization of AI, the work critically assesses how useful these tools truly are in actual creative practices. It also poses questions about what 
+is necessary for the literature of the future to be augmented through the help of AI.
+
+    </div>
+  <div class="card">
+  <strong>IT TAKES A WHOLE WORLD TO LIBERATE A SINGLE DESIGNER</strong><br><br>
+  Designer Ina Shin and editor Heewon Baek reflect on their journey of pursuing “design as a form of social action.”
+Shin shares her path from overcoming oppression and self-exploitation in the process of becoming a designer to practicing “transformative justice” as a politicized designer. Baek, drawing from her experience collaborating with designers, proposes a model of collaboration 
+based on care and just relationships, while also discussing its experiments and limitations.
+  </div>
+  <div class="card">
+    <strong>AI & LITERATURE</strong><br>
+    Exploring how language models are shaping narrative form...
+  </div>
+  <div class="card">
+    <strong>DESIGN & POLITICS</strong><br>
+    Design as political engagement in public space...
+  </div>
+  <div class="card">
+    <strong>KNOWLEDGE COMMONS</strong><br>
+    Sharing research in distributed peer networks...
+  </div>
+  <div class="card">
+    <strong>SYSTEM AESTHETICS</strong><br>
+    A look at generative systems as aesthetic method...
+  </div>
+  <div class="card">
+    <strong>DEMOCRATIC TOOLS</strong><br>
+    Tools for collective input in urban design...
+  </div>
+</div>
+
+
+  <div id="interview" class="content">
+    <div class="card">
+      <strong>MEDIA, TECHNOLOGY, AND THE “POST-TESTIMONY” — PART 1</strong><br><br>
+      In the roundtable “Media, Technology, and the ‘Post-Testimony’,” the interactive testimony project Eternal Testimony on the Japanese military ‘comfort women’ was demonstrated and discussed with the panel. Together, they explored how the evolving form of technological media preserves “old testimonies,” while also confronting the risks of mummification and objectification. The discussion critically examined the enduring value of testimony that must be preserved despite such tensions.
+    </div>
+    
+  </div>
+
+  <div id="record" class="content"></div>
+  <div id="essay" class="content"></div>
+  <div id="etc" class="content"></div>
+
+
+  <div class="manifesto">
+     We build a <a href="/space">physical</a>/<a href="radweb.html">digital</a> network system that supports the<br> 
+full cycle of textual <a href="radresearch.html">research</a>, <a href="radarchive.html">archive</a>, and and <a href="/diffusion">diffusion</a>.
+
+  </div>
+
+<script src="radresearch.js"></script>
+</body>
+</html>
